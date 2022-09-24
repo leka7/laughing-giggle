@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Фильмы, сериалы, мультфильмы</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="shortcut icon" href="images/favicon.png">
+	<script src="https://kit.fontawesome.com/bb2012b3fd.js" crossorigin="anonymous"></script>
+</head>
+<body class="js">
+	<header class="header" id="header">
+		<div class="header-in wrap-center fx-row fx-middle">
+			<a href="/" class="icon">
+				<img src="images/Icon.png" alt="wikifilms" />
+			</a>
+			<div class="btn-menu"><span class="fa fa-bars"></span></div>
+			<ul class="hmenu for_open fx-row to-mob">
+				<li><a href="filmy.html">Фильмы</a>
+					<div class="hidden-menu clearfix">
+						<ul class="hm-col">
+							<li><a href="/filmy/">Все</a></li>
+							<li><a href="/filmy/netflix-f/">NETFLIX</a></li>
+							<li>По году:</li>
+							<li><a href="/filmy/2022-f/">2022</a></li>
+							<li><a href="/filmy/2021-f/">2021</a></li>
+							<li><a href="/filmy/2020-f/">2020</a></li>
+							<li><a href="/filmy/2019-f/">2019</a></li>
+							<li><a href="/filmy/2018-f/">2018</a></li>
+							<li><a href="/filmy/2017-f/">2017</a></li>
+							<li>По странам:</li>
+							<li><a href="/filmy/zarubezhnye-f/">Зарубежные</a></li>
+							<li><a href="/filmy/indijskie-f/">Индийские</a></li>
+							<li><a href="/filmy/tureckie-f/">Турецкие</a></li>
+							<li><a href="/filmy/francuzskie-f/">Французские</a></li>
+						</ul>
+						<ul class="hm-col">
+							<li>По жанрам:</li>
+							<li><a href="/filmy/biograficheskie-f/">Биографические</a></li>
+							<li><a href="/filmy/myuzikly-f/">Мюзиклы</a></li>
+							<li><a href="/filmy/boeviki-f/">Боевики</a></li>
+							<li><a href="/filmy/vesterny-f/">Вестерны</a></li>
+							<li><a href="/filmy/voennye-f/">Военные</a></li>
+							<li><a href="/filmy/dokumentalnye-f/">Документальные</a></li>
+							<li><a href="/filmy/detektivy-f/">Детективы</a></li>
+							<li><a href="/filmy/detskie-f/">Детские</a></li>
+							<li><a href="/filmy/dramy-f/">Драмы</a></li>
+							<li><a href="/filmy/istoricheskie-f/">Исторические</a></li>
+							<li><a href="/filmy/komedii-f/">Комедии</a></li>
+							<li><a href="/filmy/korotkometrazhki-f/">Короткометражки</a></li>
+							<li><a href="/filmy/kriminal-f/">Криминал</a></li>
+						</ul>
+						<ul class="hm-col">
+							<li><a href="/filmy/melodramy-f/">Мелодрамы</a></li>
+							<li><a href="/filmy/muzykalnye-f/">Музыкальные</a></li>
+							<li><a href="/filmy/nuar-f/">Нуар</a></li>
+							<li><a href="/filmy/priklyucheniya-f/">Приключения</a></li>
+							<li><a href="/filmy/semejnye-f/">Семейные</a></li>
+							<li><a href="/filmy/sport-f/">Спорт</a></li>
+							<li><a href="/filmy/trillery-f/">Триллеры</a></li>
+							<li><a href="/filmy/uzhasy-f/">Ужасы</a></li>
+							<li><a href="/filmy/fantastika-f/">Фантастика</a></li>
+							<li><a href="/filmy/fehntezi-f/">Фэнтези</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="/serialy/">Сериалы</a>
+					<div class="hidden-menu clearfix">
+						<ul class="hm-col">
+							<li><a href="/serialy/">Все</a></li>
+							<li><a href="/serialy/netflix-s/">NETFLIX</a></li>
+							<li><a href="/doramy-s/">Дорамы</a></li>
+							<li><a href="/doramy-s/netflix-d-s/">Дорамы NETFLIX</a></li>
+							<li><a href="/multfilmy/multserial-s/">Мультсериалы</a></li>
+							<li>По году:</li>
+							<li><a href="/serialy/2022-s/">2022</a></li>
+							<li><a href="/serialy/2021-s/">2021</a></li>
+							<li><a href="/serialy/2020-s/">2020</a></li>
+							<li><a href="/serialy/2019-s/">2019</a></li>
+							<li><a href="/serialy/2018-s/">2018</a></li>
+							<li>По странам:</li>
+							<li><a href="/serialy/zarubezhnye-s/">Зарубежные</a></li>
+							<li><a href="/serialy/indijskie-s/">Индийские</a></li>
+							<li><a href="/serialy/tureckie-s/">Турецкие</a></li>
+						</ul>
+						<ul class="hm-col">
+							<li>По жанрам:</li>
+							<li><a href="/serialy/biograficheskie-s/">Биографические</a></li>
+							<li><a href="/serialy/boeviki-s/">Боевики</a></li>
+							<li><a href="/serialy/vesterny-s/">Вестерны</a></li>
+							<li><a href="/serialy/voennye-s/">Военные</a></li>
+							<li><a href="/serialy/dokumentalnye-s/">Документальные</a></li>
+							<li><a href="/serialy/detektivy-s/">Детективы</a></li>
+							<li><a href="/serialy/dramy-s/">Драмы</a></li>
+							<li><a href="/serialy/istoricheskie-s/">Исторические</a></li>
+							<li><a href="/serialy/komedii-s/">Комедии</a></li>
+						</ul>
+						<ul class="hm-col">
+							<li><a href="/serialy/kriminal-s/">Криминал</a></li>
+							<li><a href="/serialy/melodramy-s/">Мелодрамы</a></li>
+							<li><a href="/serialy/priklyucheniya-s/">Приключения</a></li>
+							<li><a href="/serialy/semejnye-s/">Семейные</a></li>
+							<li><a href="/serialy/sport-s/">Спорт</a></li>
+							<li><a href="/serialy/teleperedachi-s/">Телепередачи</a></li>
+							<li><a href="/serialy/trillery-s/">Триллеры</a></li>
+							<li><a href="/serialy/uzhasy-s/">Ужасы</a></li>
+							<li><a href="/serialy/fantastika-s/">Фантастика</a></li>
+							<li><a href="/serialy/fehntezi-s/">Фэнтези</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="/multfilmy/">Мультфильмы</a>
+					<div class="hidden-menu clearfix">
+						<ul class="hm-col">
+							<li><a href="/multfilmy/">Все</a></li>
+							<li><a href="/multfilmy/netflix-m/">NETFLIX</a></li>
+							<li>По году:</li>
+							<li><a href="/multfilmy/2022-m/">2022</a></li>
+							<li><a href="/multfilmy/2021-m/">2021</a></li>
+							<li><a href="/multfilmy/2020-m/">2020</a></li>
+							<li><a href="/multfilmy/2019-m/">2019</a></li>
+							<li><a href="/multfilmy/2018-m/">2018</a></li>
+							<li><a href="/multfilmy/2017-m/">2017</a></li>
+							<li>По странам:</li>
+							<li><a href="/multfilmy/zarubezhnye-m/">Зарубежные</a></li>
+						</ul>
+						<ul class="hm-col">
+							<li>По жанрам:</li>
+							<li><a href="/multfilmy/myuzikly-m/">Мюзиклы</a></li>
+							<li><a href="/multfilmy/boeviki-m/">Боевики</a></li>
+							<li><a href="/multfilmy/detskie-m/">Детские</a></li>
+							<li><a href="/multfilmy/dramy-m/">Драмы</a></li>
+							<li><a href="/multfilmy/komedii-m/">Комедии</a></li>
+							<li><a href="/multfilmy/melodramy-m/">Мелодрамы</a></li>
+							<li><a href="/multfilmy/Muzykalnye-m/">Музыкальные</a></li>
+							<li><a href="/multfilmy/priklyucheniya-m/">Приключения</a></li>
+						</ul>
+						<ul class="hm-col">
+							<li><a href="/multfilmy/semejnye-m/">Семейные</a></li>
+							<li><a href="/multfilmy/trillery-m/">Триллеры</a></li>
+							<li><a href="/multfilmy/uzhasy-m/">Ужасы</a></li>
+							<li><a href="/multfilmy/fantastika-m/">Фантастика</a></li>
+							<li><a href="/multfilmy/fehntezi-m/">Фэнтези</a></li>
+						</ul>
+					</div>
+				</li>
+
+			</ul>
+			<div class="Search-wrap fx-1 to-mob">
+				<form id="quicksearch" method="post">
+					<input type="hidden" name="do" value="search" />
+					<input type="hidden" name="subaction" value="search" />
+					<div class="search-box">
+						<input id="ajax_search" name="story" placeholder="Введите точное название (без ошибок!)" type="text" />
+						<button type="submit"><span class="fa fa-search"></span></button>
+					</div>
+				</form>
+			</div>
+			<div class="btn-login btn js-login to-mob">Войти</div>
+		</div>
+	</header>
+	<div class="wrap">
+		<div class="wrap-center wrap-main">
+			<div class="content">
+				<main class="main">
+					<div class="sect">
+						<div class="sect-header fx-row fx-middle fx-start">
+							<a href="/filmy/" class="sect-title">Фильмы<span class="fa fa-chevron-right"></span></a>
+							<div class="sect-tabs">
+								<span class="is-active" data-ajaxc="custom category='1' template='shortstory-ajax' from='0' limit='12'">Последние</span>
+								<span data-ajaxc="custom category='1' order='reads' template='shortstory-ajax' from='0' limit='12'">Популярные</span>
+								<span data-ajaxc="custom category='1' order='rating' template='shortstory-ajax' from='0' limit='12'">По рейтингу</span>
+							</div>
+						</div>
+						<div class="sect-cont sect-items clearfix">
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Тростник (2021)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Тростник (2021)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.6</span></div>
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Глаз смерти (2022)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Глаз смерти (2022)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>4.9</span></div>
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Зона карантина (2022)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Зона карантина (2022)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.1</span></div>
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Коттедж (2021)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Коттедж (2021)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Этой стороной вверх (2021)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Этой стороной вверх (2021)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.9</span></div>
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Судьбоносная ночь (2022)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Судьбоносная ночь (2022)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Лигр (2022)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Лигр (2022)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Пока не стемнеет (2020)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Пока не стемнеет (2020)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Проблески счастья (2022)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Проблески счастья (2022)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Задира: история Рико (2021)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Задира: история Рико (2021)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Дочери Дональда (2021)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Дочери Дональда (2021)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Псевдо (2021)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Псевдо (2021)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sect">
+						<div class="sect-header fx-row fx-middle fx-start">
+							<a href="/serialy/" class="sect-title">Сериалы<span class="fa fa-chevron-right"></span></a>
+							<div class="sect-tabs">
+								<span class="is-active" data-ajaxc="custom category='2' template='shortstory-ajax' from='0' limit='12'">Последние</span>
+								<span data-ajaxc="custom category='2' order='reads' template='shortstory-ajax' from='0' limit='12'">Популярные</span>
+								<span data-ajaxc="custom category='2' order='rating' template='shortstory-ajax' from='0' limit='12'">По рейтингу</span>
+							</div>
+						</div>
+						<div class="sect-cont sect-items clearfix">
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Властелин колец: Кольца власти (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Властелин колец: Кольца власти (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-kp" data-text="kp"><span>6.043</span></div>
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.3</span></div>
+										</div>
+									</div>
+									<div class="th-series">3 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Восьмёрка (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Восьмёрка (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.4</span></div>
+										</div>
+									</div>
+									<div class="th-series">9 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Макари (1-2 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Макари (1-2 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.2</span></div>
+										</div>
+									</div>
+									<div class="th-series">1 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Ворота Риги (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Ворота Риги (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.2</span></div>
+										</div>
+									</div>
+									<div class="th-series">11 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Рашаш (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Рашаш (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.9</span></div>
+										</div>
+									</div>
+									<div class="th-series">7 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Шустрые ребята (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Шустрые ребята (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>5.5</span></div>
+										</div>
+									</div>
+									<div class="th-series">7 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Подозреваемый (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Подозреваемый (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.5</span></div>
+										</div>
+									</div>
+									<div class="th-series">2 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Пациент (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Пациент (1 сезон)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-series">3 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Наследие: Правдивая история &quot;Лос-Анджелес Лейкерс&quot; (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Наследие: Правдивая история &quot;Лос-Анджелес Лейкерс&quot; (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>8.3</span></div>
+										</div>
+									</div>
+									<div class="th-series">5 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Дарби и Джоан (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Дарби и Джоан (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>8.6</span></div>
+										</div>
+									</div>
+									<div class="th-series">8 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Восьмая камера (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Восьмая камера (1 сезон)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-series">6 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Заключённая (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Заключённая (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7</span></div>
+										</div>
+									</div>
+									<div class="th-series">8 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sect">
+						<div class="sect-header fx-row fx-middle fx-start">
+							<a href="/multfilmy/" class="sect-title">Мультфильмы<span class="fa fa-chevron-right"></span></a>
+							<div class="sect-tabs">
+								<span class="is-active" data-ajaxc="custom category='3' template='shortstory-ajax' from='0' limit='6'">Последние</span>
+								<span data-ajaxc="custom category='3' order='reads' template='shortstory-ajax' from='0' limit='12'">Популярные</span>
+								<span data-ajaxc="custom category='3' order='rating' template='shortstory-ajax' from='0' limit='12'">По рейтингу</span>
+							</div>
+						</div>
+						<div class="sect-cont sect-items clearfix">
+							<div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Озорные анимашки (1-4 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Озорные анимашки (1-4 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-kp" data-text="kp"><span>5.98</span></div>
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.9</span></div>
+										</div>
+									</div>
+									<div class="th-series">9 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Супергиганты братья-роботы (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Супергиганты братья-роботы (1 сезон)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.7</span></div>
+										</div>
+									</div>
+									<div class="th-series">10 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Красные Джунгли (2022)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Красные Джунгли (2022)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.1</span></div>
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Олли потерялся (1 сезон)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Олли потерялся (1 сезон)</div>
+										<div class="th-rates fx-row">
+										</div>
+									</div>
+									<div class="th-series">4 серия</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Обитатели холмов (1978)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Обитатели холмов (1978)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-kp" data-text="kp"><span>7.45</span></div>
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.6</span></div>
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div><div class="th-item">
+								<a class="th-in with-mask" href="">
+									<div class="th-img img-resp-vert">
+										<img data-src="" alt="Переход (2021)" />
+									</div>
+									<div class="th-desc">
+										<div class="th-title">Переход (2021)</div>
+										<div class="th-rates fx-row">
+											<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.3</span></div>
+										</div>
+									</div>
+									<div class="th-mask fx-col fx-center fx-middle anim">
+										<span class="fa fa-play"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+			<footer class="footer fx-row">
+			<div class="ft-col ft-desc">
+				<p>Все видео взяты из открытых источников. Если обнаружите материал, который нарушает авторское право - пишите на почту, сразу удалим!<br />
+					Контакты для жалоб: <span style="color:#fff;">aelfimov832@gmail.com</span></p>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<div class="login-box not-logged">
+			<form action="adminavt.php" method="post">
+				<div class="login-title">Авторизация</div>
+				<div class="login-avatar"><span class="fa fa-user"></span></div>
+				<div class="login-input"><input type="text" name="login_name" id="login_name" placeholder="Ваш логин" /></div>
+				<div class="login-input"><input type="password" name="login_password" id="login_password" placeholder="Ваш пароль" /></div>
+				<div class="login-check">
+					<label for="login_not_save">
+						<input type="checkbox" name="login_not_save" id="login_not_save" value="1" />
+						<span>Запомнить</span>
+					</label>
+				</div>
+				<div class="login-btn"><button onclick="submit();" type="submit" title="Вход">Войти на сайт</button></div>
+				<input name="login" type="hidden" id="login" value="submit" />
+				<div class="login-btm fx-row">
+					<a href="reg.html" class="log-register">Регистрация</a>
+					<a href="https://lord2.lordfilm.lu/index.php?do=lostpassword">Восстановить пароль</a>
+				</div>
+				<div class="login-soc-title">Или войти через</div>
+				<div class="login-soc-btns">
+				</div>
+			</form>
+		</div>
+		<script src="libs.js"></script>
+		<script defer src="/node_modules/jquery/dist/jquery.min.js"></script>
+	</body>
+	</html>

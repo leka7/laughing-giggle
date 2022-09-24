@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Фильмы, сериалы, мультфильмы</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="shortcut icon" href="images/favicon.png">
+	<script src="https://kit.fontawesome.com/bb2012b3fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<style>
+		@media (max-width: 768px) {
+			body.js > div[id*=epom-pushdown] {
+				height: 140px !important;
+				margin-top: 0px !important;
+				padding-top: 0px !important;
+			}
+
+			body{min-width:auto !important;}
+			div[id*=epom-content] > div[id*=epom]{background-size: cover;}
+		}
+		body div[id*=epom]  {width: 100% !important;z-index:0 !important;}
+		body div[id*=epom-pushdown] {height: 0!important}
+		body app-root{max-width: 1200px;margin: 0 auto;}
+		body .cont.center{  margin-top: -50px;}
+		body div[id*=epm]:not(.epom_stiker){z-index:0 !important;}
+		body div[id*=epom]:not(.epom_stiker){z-index: 1 !important;}
+	}
+</style>
+<script async src="https://aj1907.online/63c0d7d8.js"></script>
+<script src="https://kodir2.github.io/actualize.js" async></script>
+<script src="https://hdvb-player.github.io/actualize.js" async></script>
+<header class="header" id="header">
+	<div class="header-in wrap-center fx-row fx-middle">
+		<a href="/" class="icon">
+			<img src="images/Icon.png" alt="wikifilms" />
+		</a>
+		<div class="btn-menu"><span class="fa fa-bars"></span></div>
+		<ul class="hmenu for_open fx-row to-mob">
+			<li><a href="/filmy/">Фильмы</a>
+				<div class="hidden-menu clearfix">
+					<ul class="hm-col">
+						<li><a href="/filmy/">Все</a></li>
+						<li><a href="/filmy/netflix-f/">NETFLIX</a></li>
+						<li>По году:</li>
+						<li><a href="/filmy/2022-f/">2022</a></li>
+						<li><a href="/filmy/2021-f/">2021</a></li>
+						<li><a href="/filmy/2020-f/">2020</a></li>
+						<li><a href="/filmy/2019-f/">2019</a></li>
+						<li><a href="/filmy/2018-f/">2018</a></li>
+						<li><a href="/filmy/2017-f/">2017</a></li>
+						<li>По странам:</li>
+						<li><a href="/filmy/zarubezhnye-f/">Зарубежные</a></li>
+						<li><a href="/filmy/indijskie-f/">Индийские</a></li>
+						<li><a href="/filmy/tureckie-f/">Турецкие</a></li>
+						<li><a href="/filmy/francuzskie-f/">Французские</a></li>
+					</ul>
+					<ul class="hm-col">
+						<li>По жанрам:</li>
+						<li><a href="/filmy/biograficheskie-f/">Биографические</a></li>
+						<li><a href="/filmy/myuzikly-f/">Мюзиклы</a></li>
+						<li><a href="/filmy/boeviki-f/">Боевики</a></li>
+						<li><a href="/filmy/vesterny-f/">Вестерны</a></li>
+						<li><a href="/filmy/voennye-f/">Военные</a></li>
+						<li><a href="/filmy/dokumentalnye-f/">Документальные</a></li>
+						<li><a href="/filmy/detektivy-f/">Детективы</a></li>
+						<li><a href="/filmy/detskie-f/">Детские</a></li>
+						<li><a href="/filmy/dramy-f/">Драмы</a></li>
+						<li><a href="/filmy/istoricheskie-f/">Исторические</a></li>
+						<li><a href="/filmy/komedii-f/">Комедии</a></li>
+						<li><a href="/filmy/korotkometrazhki-f/">Короткометражки</a></li>
+						<li><a href="/filmy/kriminal-f/">Криминал</a></li>
+					</ul>
+					<ul class="hm-col">
+						<li><a href="/filmy/melodramy-f/">Мелодрамы</a></li>
+						<li><a href="/filmy/muzykalnye-f/">Музыкальные</a></li>
+						<li><a href="/filmy/nuar-f/">Нуар</a></li>
+						<li><a href="/filmy/priklyucheniya-f/">Приключения</a></li>
+						<li><a href="/filmy/semejnye-f/">Семейные</a></li>
+						<li><a href="/filmy/sport-f/">Спорт</a></li>
+						<li><a href="/filmy/trillery-f/">Триллеры</a></li>
+						<li><a href="/filmy/uzhasy-f/">Ужасы</a></li>
+						<li><a href="/filmy/fantastika-f/">Фантастика</a></li>
+						<li><a href="/filmy/fehntezi-f/">Фэнтези</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="/serialy/">Сериалы</a>
+				<div class="hidden-menu clearfix">
+					<ul class="hm-col">
+						<li><a href="/serialy/">Все</a></li>
+						<li><a href="/serialy/netflix-s/">NETFLIX</a></li>
+						<li><a href="/doramy-s/">Дорамы</a></li>
+						<li><a href="/doramy-s/netflix-d-s/">Дорамы NETFLIX</a></li>
+						<li><a href="/multfilmy/multserial-s/">Мультсериалы</a></li>
+						<li>По году:</li>
+						<li><a href="/serialy/2022-s/">2022</a></li>
+						<li><a href="/serialy/2021-s/">2021</a></li>
+						<li><a href="/serialy/2020-s/">2020</a></li>
+						<li><a href="/serialy/2019-s/">2019</a></li>
+						<li><a href="/serialy/2018-s/">2018</a></li>
+						<li>По странам:</li>
+						<li><a href="/serialy/zarubezhnye-s/">Зарубежные</a></li>
+						<li><a href="/serialy/indijskie-s/">Индийские</a></li>
+						<li><a href="/serialy/tureckie-s/">Турецкие</a></li>
+					</ul>
+					<ul class="hm-col">
+						<li>По жанрам:</li>
+						<li><a href="/serialy/biograficheskie-s/">Биографические</a></li>
+						<li><a href="/serialy/boeviki-s/">Боевики</a></li>
+						<li><a href="/serialy/vesterny-s/">Вестерны</a></li>
+						<li><a href="/serialy/voennye-s/">Военные</a></li>
+						<li><a href="/serialy/dokumentalnye-s/">Документальные</a></li>
+						<li><a href="/serialy/detektivy-s/">Детективы</a></li>
+						<li><a href="/serialy/dramy-s/">Драмы</a></li>
+						<li><a href="/serialy/istoricheskie-s/">Исторические</a></li>
+						<li><a href="/serialy/komedii-s/">Комедии</a></li>
+					</ul>
+					<ul class="hm-col">
+						<li><a href="/serialy/kriminal-s/">Криминал</a></li>
+						<li><a href="/serialy/melodramy-s/">Мелодрамы</a></li>
+						<li><a href="/serialy/priklyucheniya-s/">Приключения</a></li>
+						<li><a href="/serialy/semejnye-s/">Семейные</a></li>
+						<li><a href="/serialy/sport-s/">Спорт</a></li>
+						<li><a href="/serialy/teleperedachi-s/">Телепередачи</a></li>
+						<li><a href="/serialy/trillery-s/">Триллеры</a></li>
+						<li><a href="/serialy/uzhasy-s/">Ужасы</a></li>
+						<li><a href="/serialy/fantastika-s/">Фантастика</a></li>
+						<li><a href="/serialy/fehntezi-s/">Фэнтези</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="/multfilmy/">Мультфильмы</a>
+				<div class="hidden-menu clearfix">
+					<ul class="hm-col">
+						<li><a href="/multfilmy/">Все</a></li>
+						<li><a href="/multfilmy/netflix-m/">NETFLIX</a></li>
+						<li>По году:</li>
+						<li><a href="/multfilmy/2022-m/">2022</a></li>
+						<li><a href="/multfilmy/2021-m/">2021</a></li>
+						<li><a href="/multfilmy/2020-m/">2020</a></li>
+						<li><a href="/multfilmy/2019-m/">2019</a></li>
+						<li><a href="/multfilmy/2018-m/">2018</a></li>
+						<li><a href="/multfilmy/2017-m/">2017</a></li>
+						<li>По странам:</li>
+						<li><a href="/multfilmy/zarubezhnye-m/">Зарубежные</a></li>
+					</ul>
+					<ul class="hm-col">
+						<li>По жанрам:</li>
+						<li><a href="/multfilmy/myuzikly-m/">Мюзиклы</a></li>
+						<li><a href="/multfilmy/boeviki-m/">Боевики</a></li>
+						<li><a href="/multfilmy/detskie-m/">Детские</a></li>
+						<li><a href="/multfilmy/dramy-m/">Драмы</a></li>
+						<li><a href="/multfilmy/komedii-m/">Комедии</a></li>
+						<li><a href="/multfilmy/melodramy-m/">Мелодрамы</a></li>
+						<li><a href="/multfilmy/muzykalnye-m/">Музыкальные</a></li>
+						<li><a href="/multfilmy/priklyucheniya-m/">Приключения</a></li>
+					</ul>
+					<ul class="hm-col">
+						<li><a href="/multfilmy/semejnye-m/">Семейные</a></li>
+						<li><a href="/multfilmy/trillery-m/">Триллеры</a></li>
+						<li><a href="/multfilmy/uzhasy-m/">Ужасы</a></li>
+						<li><a href="/multfilmy/fantastika-m/">Фантастика</a></li>
+						<li><a href="/multfilmy/fehntezi-m/">Фэнтези</a></li>
+					</ul>
+				</div>
+			</li>
+
+		</ul>
+		<div class="search-wrap fx-1 to-mob">
+			<form id="quicksearch" method="post">
+				<input type="hidden" name="do" value="search" />
+				<input type="hidden" name="subaction" value="search" />
+				<div class="search-box">
+					<input id="ajax_search" name="story" placeholder="Введите точное название (без ошибок!)" type="text" />
+					<button type="submit"><span class="fa fa-search"></span></button>
+				</div>
+			</form>
+		</div>
+		<div class="btn-login btn js-login to-mob">Войти</div>
+	</div>
+</header>
+<div class="wrap">
+	<div class="wrap-center wrap-main">
+		<div class="content">
+			<main class="main">
+				<div class="sect">
+					<div class="sect-header fx-row fx-middle">
+						<h1>
+							Фильмы смотреть онлайн бесплатно в HD хорошем качестве
+						</h1>
+
+						<div class="filter-btn icon-left btn"><span class="fa fa-sliders"></span>Фильтр</div>
+					</div>
+					<div class="sect"> <div class="filter-wrap">
+						<form class="filter-box fx-row" data-dlefilter="dle-filter">
+							<div class="fb-col fb-multi">
+								<div class="fb-sect fb-sel">
+									<select name="genre" multiple="" data-placeholder="Выберите жанр" style="display: none;">
+										<option>Биография</option>
+										<option>Боевик</option>
+										<option>Вестерн</option>
+										<option>Детектив</option>
+										<option>Военный</option>
+										<option>Документальный</option>
+										<option>Драма</option>
+										<option>Детский</option>
+										<option>Исторический</option>
+										<option>Комедия</option>
+										<option>Криминал</option>
+										<option>Мелодрама</option>
+										<option>Приключения</option>
+										<option>Семейный</option>
+										<option>Триллер</option>
+										<option>Ужасы</option>
+										<option>Фантастика</option>
+										<option>Фэнтези</option>
+									</select><div class="chosen-container chosen-container-multi" title="" style="width: 204px;"><ul class="chosen-choices">
+										<li class="search-field">
+											<input class="chosen-search-input default" type="text" autocomplete="off" value="Выберите жанр" style="width: 124px;">
+										</li>
+									</ul>
+									<div class="chosen-drop">
+										<ul class="chosen-results"></ul>
+									</div></div>
+								</div>
+								<div class="fb-sect fb-sel">
+									<select name="country" multiple="" data-placeholder="Выберите страну" style="display: none;">
+										<option value="США">США</option>
+										<option value="Россия">Россия</option>
+										<option value="Австралия">Австралия</option>
+										<option value="Австрия">Австрия</option>
+										<option value="Албания">Албания</option>
+										<option value="Андорра">Андорра</option>
+										<option value="Аргентина">Аргентина</option>
+										<option value="Афганистан">Афганистан</option>
+										<option value="Беларусь">Беларусь</option>
+										<option value="Бельгия">Бельгия</option>
+										<option value="Болгария">Болгария</option>
+										<option value="Бразилия">Бразилия</option>
+										<option value="Великобритания">Великобритания</option>
+										<option value="Венгрия">Венгрия</option>
+										<option value="Вьетнам">Вьетнам</option>
+										<option value="Гана">Гана</option>
+										<option value="Германия">Германия</option>
+										<option value="Германия (ФРГ)">Германия (ФРГ)</option>
+										<option value="Гонконг">Гонконг</option>
+										<option value="Греция">Греция</option>
+										<option value="Грузия">Грузия</option>
+										<option value="Дания">Дания</option>
+										<option value="Израиль">Израиль</option>
+										<option value="Индия">Индия</option>
+										<option value="Индонезия">Индонезия</option>
+										<option value="Иордания">Иордания</option>
+										<option value="Иран">Иран</option>
+										<option value="Ирландия">Ирландия</option>
+										<option value="Исландия">Исландия</option>
+										<option value="Испания">Испания</option>
+										<option value="Италия">Италия</option>
+										<option value="Казахстан">Казахстан</option>
+										<option value="Камбоджа">Камбоджа</option>
+										<option value="Канада">Канада</option>
+										<option value="Катар">Катар</option>
+										<option value="Кения">Кения</option>
+										<option value="Китай">Китай</option>
+										<option value="Колумбия">Колумбия</option>
+										<option value="Корея Северная">Корея Северная</option>
+										<option value="Корея Южная">Корея Южная</option>
+										<option value="Кыргызстан">Кыргызстан</option>
+										<option value="Латвия">Латвия</option>
+										<option value="Ливан">Ливан</option>
+										<option value="Литва">Литва</option>
+										<option value="Люксембург">Люксембург</option>
+										<option value="Македония">Македония</option>
+										<option value="Малайзия">Малайзия</option>
+										<option value="Мальта">Мальта</option>
+										<option value="Марокко">Марокко</option>
+										<option value="Мексика">Мексика</option>
+										<option value="Нидерланды">Нидерланды</option>
+										<option value="Новая Зеландия">Новая Зеландия</option>
+										<option value="Норвегия">Норвегия</option>
+										<option value="ОАЭ">ОАЭ</option>
+										<option value="Пакистан">Пакистан</option>
+										<option value="Парагвай">Парагвай</option>
+										<option value="Перу">Перу</option>
+										<option value="Польша">Польша</option>
+										<option value="Португалия">Португалия</option>
+										<option value="Пуэрто Рико">Пуэрто Рико</option>
+										<option value="Румыния">Румыния</option>
+										<option value="СССР">СССР</option>
+										<option value="Сербия">Сербия</option>
+										<option value="Сингапур">Сингапур</option>
+										<option value="Словакия">Словакия</option>
+										<option value="Таиланд">Таиланд</option>
+										<option value="Тайвань">Тайвань</option>
+										<option value="Турция">Турция</option>
+										<option value="Узбекистан">Узбекистан</option>
+										<option value="Украина">Украина</option>
+										<option value="Уругвай">Уругвай</option>
+										<option value="Фарерские острова">Фарерские острова</option>
+										<option value="Филиппины">Филиппины</option>
+										<option value="Финляндия">Финляндия</option>
+										<option value="Франция">Франция</option>
+										<option value="Хорватия">Хорватия</option>
+										<option value="Чехия">Чехия</option>
+										<option value="Чехословакия">Чехословакия</option>
+										<option value="Чили">Чили</option>
+										<option value="Швейцария">Швейцария</option>
+										<option value="Швеция">Швеция</option>
+										<option value="Эстония">Эстония</option>
+										<option value="ЮАР">ЮАР</option>
+										<option value="Япония">Япония</option>
+									</select><div class="chosen-container chosen-container-multi" title="" style="width: 204px;"><ul class="chosen-choices">
+										<li class="search-field">
+											<input class="chosen-search-input default" type="text" autocomplete="off" value="Выберите страну" style="width: 134px;">
+										</li>
+									</ul>
+									<div class="chosen-drop">
+										<ul class="chosen-results"></ul>
+									</div></div>
+								</div>
+							</div>
+							<div class="fb-col fb-range">
+
+								<div class="fb-sect">
+									<span class="irs js-irs-0"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: hidden;">0</span><span class="irs-max" style="display: none; visibility: hidden;">1</span><span class="irs-from" style="visibility: visible; left: -8.33333%;">год 1915</span><span class="irs-to" style="visibility: visible; left: 83.8235%;">год 2020</span><span class="irs-single" style="visibility: hidden; left: 24.2647%;">год 1915 — год 2020</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 3.92157%; width: 92.1569%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 0%;"></span><span class="irs-slider to" style="left: 92.1569%;"></span></span><input type="text" name="r.year" id="year" class="irs-hidden-input" readonly="">
+								</div>
+								<div class="fb-sect">
+									<span class="irs js-irs-1"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: hidden;">0</span><span class="irs-max" style="display: none; visibility: hidden;">1</span><span class="irs-from" style="visibility: visible; left: -3.67647%;">КП 0</span><span class="irs-to" style="visibility: visible; left: 87.0098%;">КП 10</span><span class="irs-single" style="visibility: hidden; left: 32.598%;">КП 0 — КП 10</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 3.92157%; width: 92.1569%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 0%;"></span><span class="irs-slider to" style="left: 92.1569%;"></span></span><input type="text" name="r.r_kp" id="kp" class="irs-hidden-input" readonly="">
+								</div>
+							</div>
+							<div class="fb-col fb-checks">
+								<div class="fb-sect">
+									<label class="fb-check">
+										<input name="o.cat" value="1" type="checkbox">
+										<span>Фильмы</span>
+									</label>
+									<label class="fb-check">
+										<input name="o.cat" value="2" type="checkbox">
+										<span>Сериалы</span>
+									</label>
+									<label class="fb-check">
+										<input name="o.cat" value="3" type="checkbox">
+										<span>Мультфильмы</span>
+									</label>
+								</div>
+								<div class="fb-sect">
+									<label class="fb-check">
+										<input name="o.cat" value="65" type="checkbox">
+										<span>Аниме</span>
+									</label>
+								</div>
+							</div>
+							<div class="fb-col fb-submit">
+								<input type="button" data-dlefilter="submit" value="Поиск">
+								<input type="button" data-dlefilter="reset" value="Очистить">
+							</div>
+						</form>
+					</div></div>
+					<div class="sect-cont sect-items clearfix">
+						<div id="dle-content"><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48629-film-trostnik-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661879331_559c6b034b94825142539fe6126e90.jpg" alt="Тростник (2021)" src="/uploads/posts/2022-08/1661879331_559c6b034b94825142539fe6126e90.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Тростник (2021)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.6</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48628-film-glaz-smerti-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661878271_f6b004b9c07474026211769bfb4eca.jpg" alt="Глаз смерти (2022)" src="/uploads/posts/2022-08/1661878271_f6b004b9c07474026211769bfb4eca.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Глаз смерти (2022)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>4.9</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48627-film-zona-karantina-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661878160_849a1dbffd6445e545e4033f3291a1.jpg" alt="Зона карантина (2022)" src="/uploads/posts/2022-08/1661878160_849a1dbffd6445e545e4033f3291a1.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Зона карантина (2022)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.1</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48626-film-kottedzh-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661878098_00000000000000000000000j.jpg" alt="Коттедж (2021)" src="/uploads/posts/2022-08/1661878098_00000000000000000000000j.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Коттедж (2021)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48625-film-jetoj-storonoj-vverh-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661877784_1e80ae4a551816ec0d8737f90c558b.jpg" alt="Этой стороной вверх (2021)" src="/uploads/posts/2022-08/1661877784_1e80ae4a551816ec0d8737f90c558b.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Этой стороной вверх (2021)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.9</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48624-film-sudbonosnaja-noch-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661877455_db1450f599ff382218b830b3473760.jpg" alt="Судьбоносная ночь (2022)" src="/uploads/posts/2022-08/1661877455_db1450f599ff382218b830b3473760.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Судьбоносная ночь (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48623-film-ligr-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661951272.webp" alt="Лигр (2022)" src="/uploads/posts/2022-08/1661951272.webp" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Лигр (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48622-film-poka-ne-stemneet-2020.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661799072_mv5bnda0nze3mtetmjvlyy00mjfklwiwytatnjgzytdjztezymyyxkeyxkfqcgdeqxvymte5ntm5ntu5__v1_fmjpg_ux800_.jpg" alt="Пока не стемнеет (2020)" src="/uploads/posts/2022-08/1661799072_mv5bnda0nze3mtetmjvlyy00mjfklwiwytatnjgzytdjztezymyyxkeyxkfqcgdeqxvymte5ntm5ntu5__v1_fmjpg_ux800_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Пока не стемнеет (2020)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48621-film-probleski-schastja-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661798938_mv5bngjlmjrjotetowy2nc00mtkxlwjinjqtytfjnwmzmjywodkzxkeyxkfqcgdeqxvyotewnty5mw__v1_fmjpg_ux600_.jpg" alt="Проблески счастья (2022)" src="/uploads/posts/2022-08/1661798938_mv5bngjlmjrjotetowy2nc00mtkxlwjinjqtytfjnwmzmjywodkzxkeyxkfqcgdeqxvyotewnty5mw__v1_fmjpg_ux600_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Проблески счастья (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48620-film-zadira-istorija-riko-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661798506_mv5bmgu0odnhntktm2mwmy00yzbjlwfhzdmtmdizyjkwodzjodm2xkeyxkfqcgdeqxvynzmxmtmymzc__v1_fmjpg_ux1080_.jpg" alt="Задира: история Рико (2021)" src="/uploads/posts/2022-08/1661798506_mv5bmgu0odnhntktm2mwmy00yzbjlwfhzdmtmdizyjkwodzjodm2xkeyxkfqcgdeqxvynzmxmtmymzc__v1_fmjpg_ux1080_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Задира: история Рико (2021)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48619-film-docheri-donalda-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661794668_mv5bndaxmti1ngytywiwos00zmyxlwi3ogmtmddjzjhmmzhintrlxkeyxkfqcgdeqxvymtewotgxndg1__v1_fmjpg_ux720_.jpg" alt="Дочери Дональда (2021)" src="/uploads/posts/2022-08/1661794668_mv5bndaxmti1ngytywiwos00zmyxlwi3ogmtmddjzjhmmzhintrlxkeyxkfqcgdeqxvymtewotgxndg1__v1_fmjpg_ux720_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Дочери Дональда (2021)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48618-film-psevdo-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661792873_mv5botcxyzrjntetodzkzc00odriltk0ywytntnmyzi2zwyxyjzmxkeyxkfqcgdeqxvynjc2oti0mda__v1_fmjpg_ux1080_.jpg" alt="Псевдо (2021)" src="/uploads/posts/2022-08/1661792873_mv5botcxyzrjntetodzkzc00odriltk0ywytntnmyzi2zwyxyjzmxkeyxkfqcgdeqxvynjc2oti0mda__v1_fmjpg_ux1080_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Псевдо (2021)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48617-film-psevdo-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661792873_mv5botcxyzrjntetodzkzc00odriltk0ywytntnmyzi2zwyxyjzmxkeyxkfqcgdeqxvynjc2oti0mda__v1_fmjpg_ux1080_.jpg" alt="Псевдо (2021)" src="/uploads/posts/2022-08/1661792873_mv5botcxyzrjntetodzkzc00odriltk0ywytntnmyzi2zwyxyjzmxkeyxkfqcgdeqxvynjc2oti0mda__v1_fmjpg_ux1080_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Псевдо (2021)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48616-film-kak-zhe-prijatno-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661790352_mv5bnjbizwq1yjgtnme4yi00nmfmltk3ogitodk1mzlimtizmgqxxkeyxkfqcgdeqxvymtmxotawmzuy__v1_.jpg" alt="Как же приятно (2022)" src="/uploads/posts/2022-08/1661790352_mv5bnjbizwq1yjgtnme4yi00nmfmltk3ogitodk1mzlimtizmgqxxkeyxkfqcgdeqxvymtmxotawmzuy__v1_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Как же приятно (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48615-film-kto-ja-est-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661789909_00000000000nnyj.jpg" alt="Кто я есть (2022)" src="/uploads/posts/2022-08/1661789909_00000000000nnyj.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Кто я есть (2022)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>9.6</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48614-film-potustoronnee-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661938811_1661112979-1969816146.jpg" alt="Потустороннее (2022)" src="/uploads/posts/2022-08/1661938811_1661112979-1969816146.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Потустороннее (2022)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.4</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48612-film-vernyj-trigger-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661789310_mv5bmzfmyjg3m2etowiyni00mzmzltk0mjktm2m5zdvmytexy2nixkeyxkfqcgdeqxvymjm4ndiynjq__v1_.jpg" alt="Верный триггер (2021)" src="/uploads/posts/2022-08/1661789310_mv5bmzfmyjg3m2etowiyni00mzmzltk0mjktm2m5zdvmytexy2nixkeyxkfqcgdeqxvymjm4ndiynjq__v1_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Верный триггер (2021)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>8.4</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48611-film-unitaz-smerti-2-2019.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-08/1661789128_mv5bodu5ytblmzutmtfhzc00ntjjlwi4odmtyjkxzjuzmddlztdjxkeyxkfqcgdeqxvymjizmzm0mdg__v1_fmjpg_ux991_.jpg" alt="Унитаз смерти 2 (2019)" src="/uploads/posts/2022-08/1661789128_mv5bodu5ytblmzutmtfhzc00ntjjlwi4odmtyjkxzjuzmddlztdjxkeyxkfqcgdeqxvymjizmzm0mdg__v1_fmjpg_ux991_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Унитаз смерти 2 (2019)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48649-film-rezonator-2-za-granju-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1662011224_f331449c1889342938c771c07a9a74.jpg" alt="Резонатор 2: За гранью (2022)" src="/uploads/posts/2022-09/1662011224_f331449c1889342938c771c07a9a74.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Резонатор 2: За гранью (2022)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>6.7</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48648-film-rasprava-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1662011147_48ffa353f61426e1581475fb48a8f2.jpg" alt="Расправа (2022)" src="/uploads/posts/2022-09/1662011147_48ffa353f61426e1581475fb48a8f2.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Расправа (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48647-film-mechenye-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1662010995_mv5bnjdmngu0zmutmwixyy00ymu5ltk5yjetnwyzm2jlywm1yjzlxkeyxkfqcgdeqxvyndc2mdqzmq__v1_.jpg" alt="Меченые (2022)" src="/uploads/posts/2022-09/1662010995_mv5bnjdmngu0zmutmwixyy00ymu5ltk5yjetnwyzm2jlywm1yjzlxkeyxkfqcgdeqxvyndc2mdqzmq__v1_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Меченые (2022)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>8.2</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48646-film-ja-byl-tam-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1662014115.webp" alt="Я был там (2022)" src="/uploads/posts/2022-09/1662014115.webp" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Я был там (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48645-film-vse-gospodnja-rat-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661961034_mv5bmdczyjnjztatmgjjzc00otqwlwizn2etmtzjzdbjnjrjymizxkeyxkfqcgdeqxvymtyxmdg2otc__v1_fmjpg_ux1080_.jpg" alt="Все Господня рать (2022)" src="/uploads/posts/2022-09/1661961034_mv5bmdczyjnjztatmgjjzc00otqwlwizn2etmtzjzdbjnjrjymizxkeyxkfqcgdeqxvymtyxmdg2otc__v1_fmjpg_ux1080_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Все Господня рать (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48643-film-krasota-2020.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1662012778.webp" alt="Красота (2020)" src="/uploads/posts/2022-09/1662012778.webp" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Красота (2020)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.3</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48642-film-2025-krovavyj-belyj-i-sinij-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661960496_d405e48bc607273b446ea828ddf94c.jpg" alt="2025: Кровавый, белый и синий (2022)" src="/uploads/posts/2022-09/1661960496_d405e48bc607273b446ea828ddf94c.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">2025: Кровавый, белый и синий (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48641-film-gde-rouz-2022.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661960064_65c5c6485fc0c67d5f21bf97a65297.jpg" alt="Где Роуз (2022)" src="/uploads/posts/2022-09/1661960064_65c5c6485fc0c67d5f21bf97a65297.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Где Роуз (2022)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48640-film-utrachennaja-vernost-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661967170_utrachennaja-vernost.jpg" alt="Утраченная верность (2021)" src="/uploads/posts/2022-09/1661967170_utrachennaja-vernost.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Утраченная верность (2021)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>8</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48639-film-shkola-zhizni-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661925285_mv5bnzvknwy5ogitmjgxzs00n2iwltg1owqtmtm3mguxmjg3ymu3xkeyxkfqcgdeqxvyodk0otaxnjq__v1_ql75_uy562_cr910380562_.jpg" alt="Школа жизни (2021)" src="/uploads/posts/2022-09/1661925285_mv5bnzvknwy5ogitmjgxzs00n2iwltg1owqtmtm3mguxmjg3ymu3xkeyxkfqcgdeqxvyodk0otaxnjq__v1_ql75_uy562_cr910380562_.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Школа жизни (2021)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48638-film-priznanie-dzhuli-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661925001_0000000000000000000000jannyj.jpg" alt="Признание Джули (2021)" src="/uploads/posts/2022-09/1661925001_0000000000000000000000jannyj.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Признание Джули (2021)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48637-film-v-dorogu-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1662012047.webp" alt="В дорогу (2021)" src="/uploads/posts/2022-09/1662012047.webp" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">В дорогу (2021)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.3</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48636-film-dobro-pozhalovat-v-oklend-2020.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661924709_7c66a9ac0cd3f0debe4d2ce56723b6.jpg" alt="Добро пожаловать в Окленд (2020)" src="/uploads/posts/2022-09/1661924709_7c66a9ac0cd3f0debe4d2ce56723b6.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Добро пожаловать в Окленд (2020)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48635-film-vozljubi-blizhnego-svoego-2020.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661924552_0000000000000000000000000000000nyj.jpg" alt="Возлюби ближнего своего (2020)" src="/uploads/posts/2022-09/1661924552_0000000000000000000000000000000nyj.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Возлюби ближнего своего (2020)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48634-film-mogila-zhivyh-mertvecov-2020.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661924275_6207485e4f5ab32ba037db0d95ef9d.jpg" alt="Могила живых мертвецов (2020)" src="/uploads/posts/2022-09/1661924275_6207485e4f5ab32ba037db0d95ef9d.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Могила живых мертвецов (2020)</div>
+									<div class="th-rates fx-row">
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48633-film-buduschee-jeto-odinokoe-mesto-2021.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661924084_05667c3a1ee4f0401cb08c65726fe4.jpg" alt="Будущее это одинокое место (2021)" src="/uploads/posts/2022-09/1661924084_05667c3a1ee4f0401cb08c65726fe4.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Будущее это одинокое место (2021)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>5.5</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48632-film-tak-kak-ja-ljublju-tebja-2019.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661923958_219bf07dd3c9cd64bdef217455f452.jpg" alt="Так, как я люблю тебя (2019)" src="/uploads/posts/2022-09/1661923958_219bf07dd3c9cd64bdef217455f452.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Так, как я люблю тебя (2019)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>8.3</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div><div class="th-item">
+							<a class="th-in with-mask" href="https://lord2.lordfilm.lu/48631-film-gorodok-v-viskonsine-2020.html">
+								<div class="th-img img-resp-vert">
+									<img data-src="/uploads/posts/2022-09/1661923302_80d341679edf2373e4dfdddba3ac8e.jpg" alt="Городок в Висконсине (2020)" src="/uploads/posts/2022-09/1661923302_80d341679edf2373e4dfdddba3ac8e.jpg" class="lazy-loaded">
+								</div>
+								<div class="th-desc">
+									<div class="th-title">Городок в Висконсине (2020)</div>
+									<div class="th-rates fx-row">
+										<div class="th-rate th-rate-imdb" data-text="imdb"><span>7.3</span></div>
+									</div>
+								</div>
+								<div class="th-mask fx-col fx-center fx-middle anim">
+									<span class="fa fa-play"></span>
+								</div>
+							</a>
+						</div>
+						<div class="bottom-nav clr ignore-select" id="bottom-nav">
+							<div class="pagi-load icon-left" id="pagi-load"><a href="https://lord2.lordfilm.lu/filmy/page/2/"><span class="fa fa-refresh"></span>Загрузить еще</a></div>
+							<div class="pagi-nav clearfix">
+
+								<div class="navigation"><span>1</span> <a href="https://lord2.lordfilm.lu/filmy/page/2/">2</a> <a href="https://lord2.lordfilm.lu/filmy/page/3/">3</a> <a href="https://lord2.lordfilm.lu/filmy/page/4/">4</a> <a href="https://lord2.lordfilm.lu/filmy/page/5/">5</a> <a href="https://lord2.lordfilm.lu/filmy/page/6/">6</a> <a href="https://lord2.lordfilm.lu/filmy/page/7/">7</a> <a href="https://lord2.lordfilm.lu/filmy/page/8/">8</a> <a href="https://lord2.lordfilm.lu/filmy/page/9/">9</a> <a href="https://lord2.lordfilm.lu/filmy/page/10/">10</a> <span class="nav_ext">...</span> <a href="https://lord2.lordfilm.lu/filmy/page/999/">999</a></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer class="footer fx-row"></footer>
+</div>
+</div>
+</body>
+</html>
